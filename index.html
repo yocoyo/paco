@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur d'applications</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Créateur d'applications</h1>
+        <form id="appForm">
+            <label for="appName">Nom de l'application :</label>
+            <input type="text" id="appName" required>
+            <button type="submit">Créer</button>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    <textarea id="code" placeholder="Entrez votre code ici"></textarea>
+    <button onclick="runCode()">Exécuter</button>
+    <button onclick="compileToAPK()">Compiler en APK</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
